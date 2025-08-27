@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js" integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Leonardo Salles</title>
+</head>
+
+<body>
+    <header class="nav-container">
+
+        <a href="#"><span>L</span>eo<span>S</span>alles</a>
+        <button class="open-nav" aria-label="Open navigation" aria-expanded="false"
+            aria-controls="main-navigation">&#9776;</button>
+
+        <nav class="nav" id="main-navigation">
+            <button class="close-nav" aria-label="Close navigation">&times;</button>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <a class="skip-link" href="#main-content"></a>
+
+    <section class="hero" id="home" aria-label="Hello! I am Leo Salles">
+        <h1>Hello! I am</h1>
+        <div class="letter letter-1" aria-hidden="true">L</div>
+        <div class="letter letter-2" aria-hidden="true">e</div>
+        <div class="letter letter-3" aria-hidden="true">o</div>
+        <div class="letter letter-4" aria-hidden="true">S</div>
+        <div class="letter letter-5" aria-hidden="true">a</div>
+        <div class="letter letter-6" aria-hidden="true">l</div>
+        <div class="letter letter-7" aria-hidden="true">l</div>
+        <div class="letter letter-8" aria-hidden="true">e</div>
+        <div class="letter letter-9" aria-hidden="true">s</div>
+    </section>
+
+    <main id="main-content">
+        <section class="about-container" id="about">
+            <figure>
+                <img src="./assets/images/leo-avatar.png"
+                    alt="Minimalist avatar logo of a person with red hair, black glasses, and mustache inside a red circular frame, representing the project’s author.">
+            </figure>
+            <article class="about-content">
+                <h2>Leonardo Salles</h2>
+                <p>
+                    <strong>Front-End Developer</strong> <em>transitioning from a strategic management career to technology</em>, driven by a <em>long-standing goal of creating digital solutions</em>. Holds a <strong>Bachelor’s in Marketing</strong> and a <strong>postgraduate degree in Business Intelligence</strong>. Has studied <strong>English</strong>, <strong>German</strong>, and <strong>Spanish</strong> to expand <em>global opportunities</em>, including an <em>immersion program in Berlin</em>. Gained <strong>international experience</strong> in <strong>Germany</strong> and
+                    the <strong>U.S.</strong>. Applies <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript (ES6+)</strong>, <strong>Tailwind CSS</strong>, <strong>React JS</strong>, <strong>SQL</strong>, and <strong>Power BI</strong> in personal and academic projects, with focus on <strong>dashboards</strong>, <strong>ETL</strong>, <strong>APIs</strong>,<strong>accessibility</strong>, and <strong>clean code</strong>. Certified by <strong>University of Michigan</strong>, <strong>University of London</strong>, <strong>Scrimba</strong>, and <strong>Meta</strong>. Currently <em>seeking a first opportunity in tech</em> to combine <strong>strategic vision</strong>, <strong>analytical thinking</strong>, and <strong>creativity</strong> in building <strong>modern</strong>, <strong>high-performance</strong>, <strong>UX-driven interfaces</strong>.
+                </p>
+
+                <p>
+                    <em>For more details about my professional journey, visit my <strong><a href="https://www.linkedin.com/in/leoosalles" target="_blank" rel="noopener noreferrer">LinkedIn profile</a></strong>.</em>
+                </p>
+            </article>
+        </section>
+
+        <section class="project-container" id="projects">
+            <div class="project-card hidden">
+                <figure class="project-img-container">
+                    <a href="https://leoosalles.github.io/scrimba-blackjack-game-project/">
+                        <img src="./assets/images/projects/blackjack.png" alt="">
+                    </a>
+                </figure>
+                <h3 class="project-title">Blackjack Game</h3>
+                <p class="project-description">
+                    Part of the <strong>Scrimba</strong> Frontend course, this project builds an <em>interactive Blackjack game</em> using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. It practices <em>DOM manipulation</em>, <em>event handling</em>, <em>conditionals</em>, and <em>game logic</em> for an engaging experience.
+                </p>
+            </div>
+
+            <div class="project-card hidden">
+                <figure class="project-img-container">
+                    <a href="https://leoosalles.github.io/dev2-fetching-user-data-github-api/">
+                        <img src=".//assets/images/projects/github-user-explorer.png" alt="">
+                    </a>
+                </figure>
+                <h3 class="project-title">GitHub User Explorer</h3>
+                <p class="project-description">
+                    Built for the <strong>Dev Quest</strong> Advanced JavaScript module, this app explores GitHub profiles using <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>JavaScript</strong>. It features <em>API integration</em>, <em>dynamic UI</em>, <em>modular code</em>, and <em>live repo previews</em>.
+                </p>
+            </div>
+
+            <div class="project-card hidden">
+                <figure class="project-img-container">
+                    <a href="https://leoosalles.github.io/scrimba-emoji-fighter-project/">
+                        <img src="./assets/images/projects/emoji-fighter-app.png" alt="">
+                    </a>
+                </figure>
+                <h3 class="project-title hidden">Emoji Fighter</h3>
+                <p class="project-description">
+                    Part of the <strong>Scrimba</strong> Frontend course, this project builds an <em>interactive emoji battle game</em> using <strong>JavaScript</strong>, <strong>CSS</strong>, and <strong>HTML</strong>. It practices <em>DOM manipulation</em>, <em>event handling</em>, and <em>responsive UI design</em>.
+                </p>
+            </div>
+
+            <div class="project-card hidden">
+                <figure class="project-img-container">
+                    <a href="https://leoosalles.github.io/dev2-advice-generator-app-tailwind-api/">
+                        <img src="./assets/images/projects/advice-generator-app.png" alt="">
+                    </a>
+                </figure>
+                <h3 class="project-title hidden">Advice Generator App</h3>
+                <p class="project-description">
+                    <strong>Advice Generator App</strong> is a front-end project built with <strong>HTML</strong>, <strong>Tailwind CSS</strong>, and <strong>JavaScript</strong>. It features a <em>responsive layout</em>, <em>dynamic advice via API</em>, and a <em>custom dice button</em>. Created for a <strong>Frontend Mentor</strong> challenge in the <strong>DevQuest</strong> course, it showcases <em>async logic</em> and <em>modular design</em>.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <p>&copy; Copyright - Leonardo Salles</p>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/leonardosalles/" aria-label="Visit Leonardo Salles' LinkedIn profile">
+                <i class="fa-brands fa-square-linkedin" role="img" aria-label="LinkedIn logo"></i>
+            </a>
+            <a href="https://www.instagram.com/leoosalles/" aria-label="Visit Leonardo Salles' Instagram profile">
+                <i class="fa-brands fa-instagram" role="img" aria-label="Instagram logo"></i>
+            </a>
+            <a href="https://github.com/leoosalles" aria-label="Visit Leonardo Salles' GitHub profile">
+                <i class="fa-brands fa-square-github" role="img" aria-label="GitHub logo"></i>
+            </a>
+            <a href="mailto:leonardo.sdo87@gmail.com" aria-label="Send an email to Leonardo Salles">
+                <i class="fa-solid fa-envelope" role="img" aria-label="Email icon"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
