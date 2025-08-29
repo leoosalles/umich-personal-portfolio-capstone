@@ -313,7 +313,7 @@ body {
     }
 
     .about-me-container {
-        background-color: var(--light-maroon);
+        background-color: var(--dark-maroon);
         margin-bottom: 0;
         padding: 2em 0;
     }
@@ -321,6 +321,8 @@ body {
     .about-me-title {
         background-color: unset;
         color: var(--dark-pink);
+        font-weight: 700;
+        font-size: 2.5rem;
     }
 
     .about-me-text,
@@ -329,7 +331,8 @@ body {
     }
 
     .about-me-link a {
-        color: var(--dark-maroon);
+        color: var(--dark-pink);
+        text-decoration: underline;
     }
 
     .project-card {
@@ -442,7 +445,6 @@ body {
     .about-me-container,
     .project-container {
         max-width: 1000px;
-        border: 5px solid var(--mid-maroon);
         border-radius: 1.5em;
         margin: 0 auto;
         padding: 2em;
@@ -450,7 +452,12 @@ body {
         transition: transform .5s ease, box-shadow .5s ease;
     }
 
+    .about-me-container {
+        border: 5px solid var(--dark-maroon);
+    }
+
     .project-container {
+        border: 5px solid var(--mid-maroon);
         margin: 5em auto;
     }
 
