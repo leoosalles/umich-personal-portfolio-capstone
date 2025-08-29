@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js" integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript" src="./scripts/navigation.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
     <title>Leonardo Salles</title>
 </head>
 
@@ -36,30 +38,23 @@
 
     </header>
 
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-
     <section class="hero" id="home" aria-label="Hello! I am Leo Salles">
-        <h2>Hello! I am</h2>
-        <div class="letter letter-1" aria-hidden="true">L</div>
-        <div class="letter letter-2" aria-hidden="true">e</div>
-        <div class="letter letter-3" aria-hidden="true">o</div>
-        <div class="letter letter-4" aria-hidden="true">S</div>
-        <div class="letter letter-5" aria-hidden="true">a</div>
-        <div class="letter letter-6" aria-hidden="true">l</div>
-        <div class="letter letter-7" aria-hidden="true">l</div>
-        <div class="letter letter-8" aria-hidden="true">e</div>
-        <div class="letter letter-9" aria-hidden="true">s</div>
+        <div class="hero-content">
+            <p class="greeting">Hello!</p>
+            <p class="welcome">Welcome to</p>
+            <h2 class="main-title">Leonardo's world!</h2>
+            <figure class="avatar">
+                <img src="./assets/images/leo-avatar.png" alt="Minimalist avatar logo of a person with red hair, black glasses, and mustache inside a red circular frame, representing the project’s author.">
+            </figure>
+            <p class="profession">Web Developer</p>
+        </div>
     </section>
 
     <main id="main-content">
 
         <section class="about-me-container" id="about">
-            <figure class="avatar">
-                <img src="./assets/images/leo-avatar.png" alt="Minimalist avatar logo of a person with red hair, black glasses, and mustache inside a red circular frame, representing the project’s author.">
-            </figure>
-
             <article class="about-me-content">
-                <h2 class="about-me-title">Leonardo Salles</h2>
+                <h2 class="about-me-title">About me</h2>
                 <p class="about-me-text">
                     <strong>Front-End Developer</strong> <em>transitioning from a strategic management career to technology</em>, driven by a <em>long-standing goal of creating digital solutions</em>. Holds a <strong>Bachelor’s in Marketing</strong> and a <strong>postgraduate degree in Business Intelligence</strong>. Has studied <strong>English</strong>, <strong>German</strong>, and <strong>Spanish</strong> to expand <em>global opportunities</em>, including an <em>immersion program in Berlin</em>. Gained <strong>international experience</strong> in <strong>Germany</strong> and the <strong>U.S.</strong>. Applies <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript (ES6+)</strong>, <strong>Tailwind CSS</strong>, <strong>React JS</strong>, <strong>SQL</strong>, and <strong>Power BI</strong> in personal and academic projects, with focus on <strong>dashboards</strong>, <strong>ETL</strong>, <strong>APIs</strong>, <strong>accessibility</strong>, and <strong>clean code</strong>. Certified by <strong>University of Michigan</strong>, <strong>University of London</strong>, <strong>Scrimba</strong>, and <strong>Meta</strong>. Currently <em>seeking a first opportunity in tech</em> to combine <strong>strategic vision</strong>, <strong>analytical thinking</strong>, and <strong>creativity</strong> in building <strong>modern</strong>, <strong>high-performance</strong>, <strong>UX-driven interfaces</strong>.
                 </p>
@@ -68,11 +63,10 @@
                     <em>For more details about my professional journey, visit my <strong><a href="https://www.linkedin.com/in/leoosalles" target="_blank" rel="noopener noreferrer">LinkedIn profile</a></strong>.</em>
                 </p>
             </article>
-
         </section>
 
         <section class="project-container" id="projects">
-            <div class="project-card hidden">
+            <div class="project-card">
                 <figure class="project-img-container right">
                     <a href="https://leoosalles.github.io/scrimba-blackjack-game-project/">
                         <img class="project-img" src="./assets/images/projects/blackjack.png" alt="Blackjack game interface on a green felt table with stacks of red, green, and blue poker chips at the top right, four aces (spades, hearts, clubs, diamonds) at the bottom left, and centered text reading ‘Blackjack’, ‘Want to play a round?’, ‘Cards:’, ‘Sum:’, and a ‘START GAME’ button.">
@@ -86,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="project-card hidden">
+            <div class="project-card">
                 <figure class="project-img-container left">
                     <a href="https://leoosalles.github.io/dev2-fetching-user-data-github-api/">
                         <img class="project-img" src=".//assets/images/projects/github-user-explorer.png" alt="GitHub User Explorer interface showing a search field with ‘leosalles’ entered and a Search button, a profile panel with a stylized avatar, the name ‘Leonardo’, and a description listing Front-End Developer skills (HTML5, CSS3, JavaScript, Tailwind CSS, MySQL, Power BI), alongside a repositories section indicating 30 repos with ‘dev-2-accessible-form’ highlighted and Previous/Next navigation buttons.">
@@ -100,7 +94,7 @@
                 </div>
             </div>
 
-            <div class="project-card hidden">
+            <div class="project-card">
                 <figure class="project-img-container right">
                     <a href="https://leoosalles.github.io/scrimba-emoji-fighter-project/">
                         <img class="project-img" src="./assets/images/projects/emoji-fighter-app.png" alt="Emoji Fighter selection screen showing a cartoon robot icon on the left and a cartoon frog icon on the right with ‘VS’ between them, and an orange ‘PICK FIGHTERS!’ button below inside a rounded rectangle over a white-to-gray gradient background.">
@@ -114,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="project-card hidden">
+            <div class="project-card">
                 <figure class="project-img-container left">
                     <a href="https://leoosalles.github.io/dev2-advice-generator-app-tailwind-api/">
                         <img class="project-img" src="./assets/images/projects/advice-generator-app.png" alt="Dark-themed Advice Generator App interface showing centered text ‘Click the button for some advice’, a horizontal divider, and a green circular button with a dice icon.">
@@ -126,6 +120,35 @@
                         <strong>Advice Generator App</strong> is a front-end project built with <strong>HTML</strong>, <strong>Tailwind CSS</strong>, and <strong>JavaScript</strong>. It features a <em>responsive layout</em>, <em>dynamic advice via API</em>, and a <em>custom dice button</em>. Created for a <strong>Frontend Mentor</strong> challenge in the <strong>DevQuest</strong> course, it showcases <em>async logic</em> and <em>modular design</em>.
                     </p>
                 </div>
+            </div>
+
+            <div id="projects-carousel" class="carousel slide">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="./assets/images/projects/advice-generator-app.png" class="d-block w-100" alt="Dark-themed Advice Generator App interface showing centered text ‘Click the button for some advice’, a horizontal divider, and a green circular button with a dice icon.">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="./assets/images/projects/blackjack.png" class="d-block w-100" alt="Blackjack game interface on a green felt table with stacks of red, green, and blue poker chips at the top right, four aces (spades, hearts, clubs, diamonds) at the bottom left, and centered text reading ‘Blackjack’, ‘Want to play a round?’, ‘Cards:’, ‘Sum:’, and a ‘START GAME’ button.">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/projects/emoji-fighter-app.png" class="d-block w-100" alt="Emoji Fighter selection screen showing a cartoon robot icon on the left and a cartoon frog icon on the right with ‘VS’ between them, and an orange ‘PICK FIGHTERS!’ button below inside a rounded rectangle over a white-to-gray gradient background.">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/projects/github-user-explorer.png" class="d-block w-100" alt="GitHub User Explorer interface showing a search field with ‘leosalles’ entered and a Search button, a profile panel with a stylized avatar, the name ‘Leonardo’, and a description listing Front-End Developer skills (HTML5, CSS3, JavaScript, Tailwind CSS, MySQL, Power BI), alongside a repositories section indicating 30 repos with ‘dev-2-accessible-form’ highlighted and Previous/Next navigation buttons.">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#projects-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#projects-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
             </div>
 
         </section>
@@ -144,13 +167,13 @@
             </nav>
 
             <div class="social-media">
-                <a href="https://www.linkedin.com/in/leonardosalles/" aria-label="Visit Leonardo Salles' LinkedIn profile">
+                <a href="https://www.linkedin.com/in/leonardosalles/" aria-label="Visit Leonardo Salles' LinkedIn profile" target="_blank">
                     <i class="fa-brands fa-square-linkedin social-icon" role="img" aria-label="LinkedIn logo"></i>
                 </a>
-                <a href="https://www.instagram.com/leoosalles/" aria-label="Visit Leonardo Salles' Instagram profile">
+                <a href="https://www.instagram.com/leoosalles/" aria-label="Visit Leonardo Salles' Instagram profile" target="_blank">
                     <i class="fa-brands fa-instagram social-icon" role="img" aria-label="Instagram logo"></i>
                 </a>
-                <a href="https://github.com/leoosalles" aria-label="Visit Leonardo Salles' GitHub profile">
+                <a href="https://github.com/leoosalles" aria-label="Visit Leonardo Salles' GitHub profile" target="_blank">
                     <i class="fa-brands fa-square-github social-icon" role="img" aria-label="GitHub logo"></i>
                 </a>
                 <a href="mailto:leonardo.sdo87@gmail.com" aria-label="Send an email to Leonardo Salles">
